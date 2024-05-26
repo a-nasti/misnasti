@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox layout</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html {
+        background-color: aliceblue;
+      }
+      body {
+        display: grid;
+        gap: 1rem;
+        grid:
+        "header header" max-content
+        "nav main" auto
+        "footer footer" max-content
+        / minmax(max-content, 25%) auto
+        margin: 0 auto;
+        min-height: 100svh;
+        width: min(960px, 98%);
+      }
+      header,
+      nav,
+      main,
+      header
+      footer  {
+        padding: 1em;
+        border: 1px solid gray;
+        border-radius: 1em;
+        background-color: white;
+      }
+      header {
+        grid-area: header;
+        display: flex;
+        margin-top: 1em;
+      }
+      header img {
+        padding-right: 1em;
+      }
+      nav {
+        grid-area: nav;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+      }
+      nav h2 {
+        border-bottom: 1px solid black;
+        margin-bottom: 1em;
+        text-align: center;
+        width: 100%;
+      }
+      main {
+        grid-area: main;
+        padding: 2em;
+      }
+      footer {
+        grid-area: footer;
+        margin-bottom: 1em;
+      }
+      header img {
+        height: 75px;
+      }
+      footer p {
+        width: 100%;
+        text-align: center;
+      }
+      .image-left {
+        float: left;
+      }
+      .image-right {
+        float: right;
+      }
+      .gray-bg {
+        background-color: rgb(189, 204, 204);
+      }
+      ul {
+        padding-left: 2em;
+      }
+      nav ul {
+        min-width: 100px;
+      }
+      article p {
+        text-indent: 3em;
+        text-align: justify;
+      }
+      article h1,
+      h2 {
+        padding: 1em 0 0.5em;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img
+        src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fclipartcraft.com%2Fimages%2Fhtml5-logo-png-transparent-5.png&f=1&nofb=1&ipt=72c91f78283a47257df1bda0944a1c1650869e370426225287c0fbfef94f1030&ipo=images"
+        alt="logo"
+        class="logo"
+      />
+      <h1 style="font-size: 4rem">My Portfolio</h1>
+    </header>
+
+    <nav>
+      <h2>Navigation</h2>
+      <ul class="nav">
+        <li>menu 1</li>
+        <li>menu 2</li>
+        <li>menu 3</li>
+        <li>menu 4</li>
+        <li>menu 5</li>
+      </ul>
+    </nav>
+    <main>
+      <article>
+        <img
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fclipartcraft.com%2Fimages%2Fhtml5-logo-png-transparent-5.png&f=1&nofb=1&ipt=72c91f78283a47257df1bda0944a1c1650869e370426225287c0fbfef94f1030&ipo=images"
+          alt="article image"
+          class="image-left"
+          width="200px"
+        />
+        <h1>Header 1</h1>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae
+          quos vel necessitatibus, harum est itaque omnis soluta, perspiciatis
+          magnam quo officiis nobis dolorem, asperiores quasi! Magni facere
+          repudiandae sint, unde nisi quae facilis modi ratione minus nostrum
+          molestiae eius tempore. Cupiditate quae incidunt, cumque eveniet
+          repellat laudantium autem quia cum.
+        </p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae
+          quos vel necessitatibus, harum est itaque omnis soluta, perspiciatis
+          magnam quo officiis nobis dolorem, asperiores quasi! Magni facere
+          repudiandae sint, unde nisi quae facilis modi ratione minus nostrum
+          molestiae eius tempore. Cupiditate quae incidunt, cumque eveniet
+          repellat laudantium autem quia cum.
+        </p>
+        <h2>Level 2 Header</h2>
+        <img
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fclipartcraft.com%2Fimages%2Fhtml5-logo-png-transparent-5.png&f=1&nofb=1&ipt=72c91f78283a47257df1bda0944a1c1650869e370426225287c0fbfef94f1030&ipo=images"
+          alt="article image"
+          class="image-right"
+          width="200px"
+        />
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+          Exercitationem, quisquam? Iusto ad iste placeat, totam nam maiores
+          velit amet quam quibusdam vitae expedita, fugiat sapiente provident
+          facere aliquam laboriosam voluptates ab ipsam id. Magni accusamus
+          vitae aut omnis deserunt, eum reiciendis sequi qui rem saepe
+          recusandae tempora necessitatibus totam ullam laboriosam odit
+          similique beatae iusto dicta repudiandae. Est saepe a quos aut
+          repudiandae laudantium sapiente dignissimos consequuntur doloremque.
+          Minima nihil sequi, animi earum beatae commodi laudantium. Laboriosam
+          odio rem qui, magni, repudiandae in, dicta obcaecati soluta sit
+          blanditiis ipsa adipisci minus ea! Fugiat tempore odit esse sint
+          nostrum ipsa sed?
+        </p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae
+          quos vel necessitatibus, harum est itaque omnis soluta, perspiciatis
+          magnam quo officiis nobis dolorem, asperiores quasi! Magni facere
+          repudiandae sint, unde nisi quae facilis modi ratione minus nostrum
+          molestiae eius tempore. Cupiditate quae incidunt, cumque eveniet
+          repellat laudantium autem quia cum.
+        </p>
+      </article>
+    </main>
+
+    <footer><p class="footer">&copy; Artist Name, 2023</p></footer>
+  </body>
+</html>
