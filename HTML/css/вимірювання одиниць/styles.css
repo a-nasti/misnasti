@@ -1,0 +1,142 @@
+/*
+Форматування (властивості) шрифту та тексту:
+font-size - ...
+font-family - ...
+text-align - ...
+text-indent - ...
+font-style - ...
+font-weight - ...
+color - ...
+line-height - ...
+background-color - ...
+letter-spacing - ...
+*/
+
+html {
+  font-size: 16px; /* кегль (розмір) шрифту */
+  font-family: Arial, Helvetica, sans-serif; /* назва шрифту: шрифт або сімейство шрифтів */
+}
+
+#main-header {
+  color: darkgreen; /* колір тексту */
+}
+
+body {
+  margin: 0 auto; /* поля зовні */
+  width: 70%; /* ширина */
+  max-width: 800px; /* максимально дозволена ширина */
+  color: rgb(112, 104, 117); /* колір тексту */
+}
+
+#logo {
+  margin: 16px 0; /* береги зовні */
+}
+
+header a {
+  color: rgb(9, 9, 134); /* колір тексту */
+  text-decoration: none; /* оформлення лінії підкреслення */
+  font-weight: 700; /* товщина штрихів шрифту */
+}
+
+header a:hover {
+  color: rgb(174, 0, 255); /* колір тексту */
+}
+
+main {
+  display: grid; /* вид верстки (розміщення) дочірніх елементів - сітка */
+  grid-template-columns: 3fr 1fr; /* об'ява ширини колонок сітки */
+  gap: 2em; /* проміжок між колонками сітки */
+}
+
+article img {
+  width: 20%; /* ширина */
+}
+
+.img-left {
+  float: left; /* розташування зображення в тексті */
+  margin: 0.5em 2em 0.5em 0; /* поля */
+}
+
+.img-right {
+  float: right; /* розташування зображення в тексті */
+  margin: 0.5em 0 0.5em 2em; /* поля */
+}
+
+header,
+footer {
+  display: flex; /* вид верстки (розміщення) дочірніх елементів - гнучкі блоки */
+  align-items: center; /* вирівнювання дочірніх елементів всередині блоку контейнера гнучких блоків */
+  justify-content: space-between; /* пропустити */
+}
+
+footer {
+  height: 100px;
+  background-color: azure; /* колір тла */
+  padding: 0 1.5em 0 0; /* береги в середині меж об'єкта*/
+  color: cadetblue; /* колір тексту */
+  margin: 1.5em 0 0; /* поля */
+}
+
+h1,
+h2 {
+  font-family: Georgia, "Times New Roman", Times, serif; /* назва шрифту: шрифт або сімейство шрифтів */
+  margin: 1.2em 0; /* поля */
+}
+
+h1 {
+  text-align: center; /* вирівнювання тексту в абзаці: ліворуч, по центру, по правому краю, по ширині */
+  color: darkred; /* колір тексту */
+}
+
+p {
+  text-align: left; /* вирівнювання тексту */
+  text-indent: 0; /* відступ першого рядка абзацу */
+  margin-bottom: 0.5em; /* зовнішній нижній берег */
+  line-height: 1em; /* міжрядковий інтервал */
+}
+
+ul {
+  list-style: none; /* вигляд маркера невпорядкованого списку */
+  display: flex; /* вид верстки (розміщення) дочірніх елементів - гнучкі блоки */
+  font-style: normal; /* накреслення шрифту (звичайне) */
+}
+
+li {
+  margin: 1.2em 1.5em 0; /* поля */
+}
+
+footer li {
+  margin: 1.2em 1.5em; /* поля */
+}
+
+header li:last-child {
+  margin-right: 0; /* праве поле */
+}
+
+footer a {
+  color: cadetblue; /* колір тексту */
+}
+
+footer a:hover {
+  color: rgb(60, 125, 128); /* колір тексту */
+}
+
+.description {
+  font-style: italic; /* накреслення шрифту */
+}
+
+.description-header {
+  font-style: italic; /* накреслення шрифту */
+}
+
+aside {
+  text-align: left; /* вирівнювання тексту */
+}
+
+ol {
+  padding: 0; /* відступи */
+}
+
+cite {
+  font-style: italic; /* накреслення шрифту */
+}
