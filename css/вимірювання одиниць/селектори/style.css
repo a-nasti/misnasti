@@ -1,0 +1,58 @@
+body {
+  font-size: 20px;
+  font-family: Arial;
+}
+
+main,
+footer {
+  min-width: 500px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+cite {
+  font-family: serif;
+}
+
+h1 + p {
+  color: darkslategray;
+  font-size: 16px;
+}
+
+h1 {
+  text-align: center;
+}
+
+p {
+  text-indent: 2em;
+  text-align: justify;
+}
+
+main p:hover {
+  background-color: rgb(222, 252, 161);
+}
+
+cite {
+  margin-top: 16px;
+  color: lightgreen;
+  text-align: right;
+  display: block;
+}
+
+footer {
+  font-size: 16px;
+  color: darkgray;
+  background-color: rgb(73, 107, 107);
+  padding: 20px;
+}
+
+.lastp {
+  margin: 0 auto;
+  width: 85%;
+}
+
+#foot_header {
+  font-style: italic;
+}
